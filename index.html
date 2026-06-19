@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IJCV Special Issue — Multimodal Unified Comprehension and Generation (MUCG)</title>
+  <meta name="description" content="Call for Papers — IJCV Special Issue on Multimodal Large Language Models for Unified Comprehension and Generation (MUCG)." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <!-- ───────────────────────── NAV ───────────────────────── -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">
+        <span class="nav__mark">IJCV</span>
+        <span class="nav__brand-sub">Special Issue · MUCG</span>
+      </a>
+      <nav class="nav__links" aria-label="Section navigation">
+        <a href="#overview">Overview</a>
+        <a href="#topics">Topics</a>
+        <a href="#submission">Submission</a>
+        <a href="#dates">Dates</a>
+        <a href="#editors">Editors</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--solid nav__cta" href="#submission">Submit Paper</a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ───────────────────────── HERO ───────────────────────── -->
+  <section class="hero" id="top">
+    <div class="hero__grain" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="eyebrow reveal">
+        <span class="eyebrow__dot"></span>
+        Call for Papers · International Journal of Computer Vision
+      </p>
+
+      <h1 class="hero__title reveal" data-delay="1">
+        Multimodal Unified<br />
+        <em>Comprehension</em> &amp; <em>Generation</em>
+      </h1>
+
+      <p class="hero__lede reveal" data-delay="2">
+        An <strong>IJCV</strong> Special Issue on multimodal large language models that <strong>MUCG</strong> &mdash; jointly perceive, reason, and generate within a single cohesive architecture, closing the loop between understanding and synthesis.
+      </p>
+
+      <div class="hero__actions reveal" data-delay="3">
+        <a class="btn btn--solid" href="#submission">Submission Portal →</a>
+        <a class="btn btn--ghost" href="#overview">Read the Call</a>
+      </div>
+
+      <ul class="hero__facts reveal" data-delay="4">
+        <li>
+          <span class="hero__facts-k">Submission Deadline</span>
+          <span class="hero__facts-v">1 Nov 2026</span>
+        </li>
+        <li>
+          <span class="hero__facts-k">Journal</span>
+          <span class="hero__facts-v">IJCV · Springer</span>
+        </li>
+        <li>
+          <span class="hero__facts-k">Publication</span>
+          <span class="hero__facts-v">May / Jun 2027</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <main>
+    <!-- ───────────────────── OVERVIEW ───────────────────── -->
+    <section class="section" id="overview">
+      <div class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2 class="section__title">Overview</h2>
+      </div>
+      <div class="prose reveal">
+        <p>
+          <span class="dropcap">M</span>ultimodal large language models now process images, video, audio, 3D data, and embodied sensory inputs. Crucially, these systems are evolving beyond the traditional silos of perception (classification, detection, grounding) and synthesis (image and video generation), and increasingly aim to <strong>unify comprehension and generation within a single, cohesive architecture</strong>.
+        </p>
+        <p>
+          We define this emerging paradigm as <strong>MUCG — Multimodal Unified Comprehension and Generation</strong>. Its defining characteristic is not modality or task coverage alone, but the <em>alignment among perceptual grounding, internal reasoning, and generative outputs</em> — heterogeneous inputs in, heterogeneous outputs out, evaluated in a closed loop. This Special Issue consolidates the conceptual, methodological, and evaluative foundations of this shift.
+        </p>
+      </div>
+
+      <div class="pillars reveal">
+        <article class="pillar">
+          <span class="pillar__num">i</span>
+          <h3>Task-Specific → Unified</h3>
+          <p>From narrow task pipelines toward foundation models that understand, reason, and generate in a unified manner.</p>
+        </article>
+        <article class="pillar">
+          <span class="pillar__num">ii</span>
+          <h3>Static → Interactive</h3>
+          <p>Models deployed in embodied, interactive, and creative settings — comprehension guides generation; generation reveals comprehension.</p>
+        </article>
+        <article class="pillar">
+          <span class="pillar__num">iii</span>
+          <h3>Isolated → Closed-Loop</h3>
+          <p>New evaluation of understanding–generation consistency, grounded controllability, robustness, and reliability across tasks.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────────────── TOPICS ───────────────────── -->
+    <section class="section section--alt" id="topics">
+      <div class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Aims &amp; Scope</h2>
+      </div>
+      <p class="section__intro reveal">
+        We seek principled frameworks, scalable learning paradigms, and reliable evaluation methodologies for unified multimodal systems. Topics of interest include, but are not limited to:
+      </p>
+
+      <div class="scope">
+        <article class="scope__card reveal">
+          <span class="scope__num">I</span>
+          <h3 class="scope__head">Unified Modeling Architectures</h3>
+          <ul class="scope__list">
+            <li>Single-backbone unified transformer frameworks</li>
+            <li>Encoder–LLM–decoder unified pipelines</li>
+            <li>Autoregressive–diffusion hybrid architectures</li>
+            <li>Tokenization &amp; representation alignment across modalities</li>
+            <li>Structured intermediate representations (scene graphs, programs, plans)</li>
+          </ul>
+        </article>
+
+        <article class="scope__card reveal" data-delay="1">
+          <span class="scope__num">II</span>
+          <h3 class="scope__head">Training &amp; Alignment Strategies</h3>
+          <ul class="scope__list">
+            <li>Multi-task and curriculum learning strategies</li>
+            <li>Data mixture design for unified tasks</li>
+            <li>Instruction tuning &amp; preference alignment</li>
+            <li>Reinforcement learning and feedback-driven refinement</li>
+            <li>Synthetic data generation &amp; automatic annotation</li>
+          </ul>
+        </article>
+
+        <article class="scope__card reveal" data-delay="2">
+          <span class="scope__num">III</span>
+          <h3 class="scope__head">Reasoning, Grounding &amp; Controllability</h3>
+          <ul class="scope__list">
+            <li>Grounded multimodal reasoning</li>
+            <li>Planning-based generation</li>
+            <li>Closed-loop understanding–generation frameworks</li>
+            <li>Editable and controllable generation</li>
+            <li>Structured &amp; explainable intermediate reasoning</li>
+          </ul>
+        </article>
+
+        <article class="scope__card reveal">
+          <span class="scope__num">IV</span>
+          <h3 class="scope__head">Evaluation &amp; Benchmarks</h3>
+          <ul class="scope__list">
+            <li>Unified evaluation suites for comprehension &amp; generation</li>
+            <li>Consistency and cycle-consistency metrics</li>
+            <li>Robustness, calibration, and reliability analysis</li>
+          </ul>
+        </article>
+
+        <article class="scope__card reveal" data-delay="1">
+          <span class="scope__num">V</span>
+          <h3 class="scope__head">Efficiency &amp; Scalability</h3>
+          <ul class="scope__list">
+            <li>Mixture-of-experts for multimodal systems</li>
+            <li>Efficient long-context modeling (video, multi-image, dialogue)</li>
+            <li>Compression, distillation, and deployment</li>
+          </ul>
+        </article>
+
+        <article class="scope__card reveal" data-delay="2">
+          <span class="scope__num">VI</span>
+          <h3 class="scope__head">Applications</h3>
+          <ul class="scope__list">
+            <li>Embodied and robotic systems</li>
+            <li>Medical and scientific imaging</li>
+            <li>Remote sensing and industrial vision</li>
+            <li>Creative and interactive content systems</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────────────── SUBMISSION ───────────────────── -->
+    <section class="section" id="submission">
+      <div class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2 class="section__title">Submission &amp; Reviewing</h2>
+      </div>
+      <div class="submit">
+        <div class="prose reveal">
+          <p>
+            Prepare manuscripts according to the IJCV
+            <a href="https://link.springer.com/journal/11263" target="_blank" rel="noopener">Submission
+            Guidelines</a> and select the article type
+            <strong>“SI: Multimodal Unified Comprehension and Generation.”</strong>
+            All papers are peer-reviewed following IJCV procedures by at least three independent reviewers.
+          </p>
+          <p>
+            Manuscripts must not be published or under review elsewhere. Submissions should demonstrate,
+            in a cover letter, their relationship to the topic of this Special Issue. Papers receiving a
+            <strong>Major Revision</strong> should be resubmitted within 3 months;
+            <strong>Minor Revision</strong> within 1 month, with a detailed response to reviewers.
+          </p>
+          <div class="submit__actions">
+            <a class="btn btn--solid" href="https://link.springer.com/journal/11263" target="_blank" rel="noopener">Open Editorial Manager →</a>
+            <a class="btn btn--ghost" href="https://link.springer.com/journal/11263" target="_blank" rel="noopener">Author Guidelines</a>
+          </div>
+        </div>
+        <aside class="submit__card reveal" data-delay="1">
+          <h3 class="submit__card-title">At a glance</h3>
+          <dl class="kv">
+            <dt>Article type</dt><dd>SI: Multimodal Unified Comprehension and Generation</dd>
+            <dt>Review</dt><dd>≥ 3 independent reviewers, IJCV process</dd>
+            <dt>Major revision</dt><dd>Resubmit within 3 months</dd>
+            <dt>Minor revision</dt><dd>Resubmit within 1 month</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────────────────── DATES ───────────────────── -->
+    <section class="section section--alt" id="dates">
+      <div class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 class="section__title">Important Dates</h2>
+      </div>
+
+      <div class="countdown reveal" id="countdown" data-deadline="2026-11-02T11:59:59Z">
+        <p class="countdown__label">Time remaining until submission deadline</p>
+        <div class="countdown__grid">
+          <div class="countdown__unit"><span class="countdown__num" data-cd="days">—</span><span class="countdown__cap">Days</span></div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__unit"><span class="countdown__num" data-cd="hours">—</span><span class="countdown__cap">Hours</span></div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__unit"><span class="countdown__num" data-cd="mins">—</span><span class="countdown__cap">Minutes</span></div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__unit"><span class="countdown__num" data-cd="secs">—</span><span class="countdown__cap">Seconds</span></div>
+        </div>
+        <p class="countdown__closed">The submission deadline has passed.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <span class="timeline__date">1 November 2026</span>
+          <span class="timeline__label">Manuscript submission deadline</span>
+        </li>
+        <li class="timeline__item reveal" data-delay="1">
+          <span class="timeline__date">1 February 2027</span>
+          <span class="timeline__label">First review notification</span>
+        </li>
+        <li class="timeline__item reveal" data-delay="2">
+          <span class="timeline__date">15 March 2027</span>
+          <span class="timeline__label">Revised manuscript submission</span>
+        </li>
+        <li class="timeline__item reveal" data-delay="3">
+          <span class="timeline__date">1 May 2027</span>
+          <span class="timeline__label">Final review notification</span>
+        </li>
+        <li class="timeline__item timeline__item--end reveal" data-delay="4">
+          <span class="timeline__date">May / June 2027</span>
+          <span class="timeline__label">Special Issue publication</span>
+        </li>
+      </ol>
+      <p class="dates__note reveal">All deadlines are <strong>Anywhere on Earth (AOE, UTC&minus;12)</strong>.</p>
+    </section>
+
+    <!-- ───────────────────── EDITORS ───────────────────── -->
+    <section class="section" id="editors">
+      <div class="section__head reveal">
+        <span class="section__index">05</span>
+        <h2 class="section__title">Guest Editors</h2>
+      </div>
+      <!-- <p class="section__intro reveal">
+        The editorial team includes Associate Editors of IJCV (Ziwei Liu, Jianfei Cai, Ming-Hsuan Yang)
+        and members of the IEEE&nbsp;TPAMI editorial board.
+      </p> -->
+      <div class="editors">
+        <article class="editor reveal">
+          <span class="editor__avatar" data-initials="HF"></span>
+          <h3 class="editor__name">Hao Fei</h3>
+          <p class="editor__aff">University of Oxford</p>
+          <a class="editor__link" href="http://haofei.vip/" target="_blank" rel="noopener">Homepage ↗</a>
+        </article>
+        <article class="editor reveal" data-delay="1">
+          <span class="editor__avatar" data-initials="SW"></span>
+          <h3 class="editor__name">Shengqiong Wu</h3>
+          <p class="editor__aff">University of Oxford</p>
+          <a class="editor__link" href="https://sqwu.top/" target="_blank" rel="noopener">Homepage ↗</a>
+        </article>
+        <article class="editor reveal" data-delay="2">
+          <span class="editor__avatar" data-initials="XW"></span>
+          <h3 class="editor__name">Xiaohan Wang</h3>
+          <p class="editor__aff">Stanford University</p>
+          <a class="editor__link" href="https://ai.stanford.edu/~xhanwang/" target="_blank" rel="noopener">Homepage ↗</a>
+        </article>
+        <article class="editor reveal" data-delay="3">
+          <span class="editor__avatar" data-initials="MS"></span>
+          <h3 class="editor__name">Mike Zheng Shou</h3>
+          <p class="editor__aff">National University of Singapore</p>
+          <a class="editor__link" href="https://sites.google.com/view/showlab" target="_blank" rel="noopener">Homepage ↗</a>
+        </article>
+        <article class="editor reveal">
+          <span class="editor__avatar" data-initials="ZL"></span>
+          <h3 class="editor__name">Ziwei Liu</h3>
+          <p class="editor__aff">Nanyang Technological University</p>
+          <a class="editor__link" href="https://liuziwei7.github.io/" target="_blank" rel="noopener">Homepage ↗</a>
+        </article>
+        <article class="editor reveal" data-delay="1">
+          <span class="editor__avatar" data-initials="JC"></span>
+          <h3 class="editor__name">Jianfei Cai</h3>
+          <p class="editor__aff">Monash University</p>
+          <a class="editor__link" href="https://jianfei-cai.github.io/" target="_blank" rel="noopener">Homepage ↗</a>
+        </article>
+        <article class="editor reveal" data-delay="2">
+          <span class="editor__avatar" data-initials="LJ"></span>
+          <h3 class="editor__name">Lu Jiang</h3>
+          <p class="editor__aff">Apple</p>
+          <a class="editor__link" href="http://www.lujiang.info/" target="_blank" rel="noopener">Homepage ↗</a>
+        </article>
+        <article class="editor reveal" data-delay="3">
+          <span class="editor__avatar" data-initials="YL"></span>
+          <h3 class="editor__name">Yong Jae Lee</h3>
+          <p class="editor__aff">UW–Madison &amp; Adobe Research</p>
+          <a class="editor__link" href="https://pages.cs.wisc.edu/~yongjaelee/" target="_blank" rel="noopener">Homepage ↗</a>
+        </article>
+        <article class="editor reveal">
+          <span class="editor__avatar" data-initials="MB"></span>
+          <h3 class="editor__name">Mohit Bansal</h3>
+          <p class="editor__aff">UNC Chapel Hill</p>
+          <a class="editor__link" href="https://www.cs.unc.edu/~mbansal/" target="_blank" rel="noopener">Homepage ↗</a>
+        </article>
+        <article class="editor reveal" data-delay="1">
+          <span class="editor__avatar" data-initials="MY"></span>
+          <h3 class="editor__name">Ming-Hsuan Yang</h3>
+          <p class="editor__aff">UC Merced</p>
+          <a class="editor__link" href="https://faculty.ucmerced.edu/mhyang/" target="_blank" rel="noopener">Homepage ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────────────── FAQ ───────────────────── -->
+    <section class="section section--alt" id="faq">
+      <div class="section__head reveal">
+        <span class="section__index">06</span>
+        <h2 class="section__title">FAQ</h2>
+      </div>
+      <div class="faq reveal">
+        <details class="faq__item">
+          <summary>How and where do I submit?</summary>
+          <div class="faq__body">
+            <p>Submit through the IJCV Editorial Manager and select the article type
+            <strong>“SI: Multimodal Unified Comprehension and Generation.”</strong> Follow the standard
+            <a href="https://link.springer.com/journal/11263" target="_blank" rel="noopener">IJCV author guidelines</a>.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>Is my paper a good fit for this Special Issue?</summary>
+          <div class="faq__body">
+            <p>If your work advances unified multimodal architectures, training and alignment, reasoning
+            and controllability, evaluation, efficiency, or applications — see the Aims &amp; Scope above —
+            it is likely in scope. When in doubt, contact the guest editors.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>Will you accept conference extensions?</summary>
+          <div class="faq__body">
+            <p>Yes. Conference-based extended papers are expected to have a minimum of 30% additional
+            scientific contribution — for example, new or improved algorithms or analysis, new experiments,
+            or qualitative/quantitative comparisons. As long as it is noted in the submission that the paper
+            is extended from a conference paper, these should be fine.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>Do I need to wait until the deadline to submit my paper?</summary>
+          <div class="faq__body">
+            <p>No. You are welcome to submit your manuscript at any time before the deadline. Once your
+            submission is received, we will initiate the review process as soon as possible.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>What are the revision timelines?</summary>
+          <div class="faq__body">
+            <p>Papers with a <strong>Major Revision</strong> decision should be resubmitted within 3 months;
+            <strong>Minor Revision</strong> within 1 month. Revised submissions must include a detailed
+            response to reviewers.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────────────────── FOOTER ───────────────────────── -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__mark">IJCV</span>
+        <p>Special Issue · Multimodal Unified Comprehension and Generation (MUCG)</p>
+      </div>
+      <div class="footer__contact">
+        <p class="footer__label">Inquiries</p>
+        <a href="mailto:shengqiongwu@gmail.com">Shengqiong Wu</a>, <a href="mailto:haofei7419@gmail.com">Hao Fei</a>
+      </div>
+    </div>
+    <p class="footer__fine">
+      International Journal of Computer Vision · Springer · © 2026.
+    </p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
