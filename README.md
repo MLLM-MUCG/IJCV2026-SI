@@ -23,7 +23,13 @@ All deadlines are **Anywhere on Earth (AOE, UTC−12)**.
 
 ## Guest Editors
 
-Hao Fei · Shengqiong Wu (University of Oxford) · Xiaohan Wang (Stanford) ·
-Mike Zheng Shou (NUS) · Ziwei Liu (NTU) · Jianfei Cai (Monash) · Lu Jiang (Apple) ·
-Yong Jae Lee (UW–Madison & Adobe) · Mohit Bansal (UNC Chapel Hill) ·
-Ming-Hsuan Yang (UC Merced).
+- Hao Fei (University of Oxford) 
+- Shengqiong Wu (University of Oxford) 
+- Xiaohan Wang (Stanford) 
+- Mike Zheng Shou (NUS) 
+- Ziwei Liu (NTU) 
+- Jianfei Cai (Monash) 
+- Lu Jiang (Apple) 
+- Yong Jae Lee (UW–Madison & Adobe) 
+- Mohit Bansal (UNC Chapel Hill) 
+- Ming-Hsuan Yang (UC Merced).
