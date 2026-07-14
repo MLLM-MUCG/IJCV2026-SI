@@ -285,6 +285,27 @@ em { font-style: italic; }
 .editor__aff { font-size: .85rem; color: var(--ink-soft); margin: 0 0 .9rem; }
 .editor__link { font-family: var(--mono); font-size: .78rem; margin-top: auto; padding-top: .3rem; }
 
+/* call for reviewers */
+.cfr { position: relative; overflow: hidden; display: grid; grid-template-columns: 1fr auto;
+  gap: 2rem; align-items: center; background: var(--teal); color: #fff;
+  border-radius: var(--r); padding: 2.2rem 2.4rem; }
+.cfr::after {
+  content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 40%; pointer-events: none;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Cg stroke='%23ffffff' stroke-opacity='0.12' stroke-width='2'%3E%3Cline x1='40' y1='60' x2='40' y2='150'/%3E%3Cline x1='110' y1='40' x2='110' y2='130'/%3E%3Cline x1='180' y1='70' x2='180' y2='160'/%3E%3Cline x1='250' y1='30' x2='250' y2='120'/%3E%3C/g%3E%3Cg fill='%232fae46' fill-opacity='0.55'%3E%3Crect x='35' y='95' width='10' height='10'/%3E%3Crect x='105' y='75' width='10' height='10'/%3E%3Crect x='175' y='105' width='10' height='10'/%3E%3Crect x='245' y='65' width='10' height='10'/%3E%3C/g%3E%3C/svg%3E")
+    no-repeat right center;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 70%);
+          mask-image: linear-gradient(to right, transparent, #000 70%);
+}
+.cfr__text { position: relative; z-index: 1; }
+.cfr__text p { margin: 0 0 .8rem; color: rgba(255,255,255,.86); }
+.cfr__text p:last-child { margin-bottom: 0; }
+.cfr__meta { font-size: .92rem; color: rgba(255,255,255,.62) !important; }
+.cfr__cta { position: relative; z-index: 1; }
+.cfr .btn--solid { background: var(--green); color: var(--teal-deep); white-space: nowrap; }
+.cfr .btn--solid:hover { background: #38c451; color: var(--teal-deep); transform: translateY(-1px); }
+@media (max-width: 720px) { .cfr { grid-template-columns: 1fr; padding: 1.8rem; } }
+
 /* faq */
 .faq { max-width: none; }
 .faq__item { border-bottom: 1px solid var(--line); }
